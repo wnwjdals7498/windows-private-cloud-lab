@@ -6,6 +6,8 @@
 
 운영자 화면의 방향은 [UI 가이드](ui/guide.md)와 [HTML 목업](ui/mockup.html)에서 먼저 검토한다.
 
+포털 신청부터 첫 Rocky Linux VM 부팅까지의 공동 최소 범위는 [cloud-management-portal-lab의 첫 동작 결과 계획](https://github.com/wnwjdals7498/cloud-management-portal-lab/blob/main/docs/first-working-slice.md)에 정리한다.
+
 ## 단계
 
 1. 호스트 CPU, 메모리, 저장공간, 가상화, 네트워크와 Hyper-V 상태를 확인한다. 실제 사용 가능한 자원과 허용된 사설망 범위를 기록한다.
