@@ -5,6 +5,7 @@
 단일 Windows 11 Pro Hyper-V 호스트에서 수동 VM 생성부터 반복 가능한 PowerShell 자동화, 관리포털 연동까지 단계적으로 검증한다. Windows Server·클러스터·VMM·DPM 확장은 환경 확보 후 진행한다.
 
 운영자 화면의 방향은 [UI 가이드](ui/guide.md)와 [HTML 목업](ui/mockup.html)에서 먼저 검토한다.
+실제 호스트·VM 실습 화면은 별도 웹앱으로 만들지 않고 PHP·CodeIgniter 관리포털의 관리자 메뉴에 통합한다.
 
 포털 신청부터 첫 Rocky Linux VM 부팅까지의 공동 최소 범위는 [cloud-management-portal-lab의 첫 동작 결과 계획](https://github.com/wnwjdals7498/cloud-management-portal-lab/blob/main/docs/first-working-slice.md)에 정리한다.
 
@@ -24,4 +25,4 @@
 
 ## 이후 결정
 
-테스트 VM 사양, 게스트 OS, 정확한 가상 스위치 구성, 로그 세부 형식과 고급 제품 확장 환경은 단계별 착수 전에 결정한다.
+테스트 VM 사양, 로그 세부 형식과 고급 제품 확장 환경은 단계별 착수 전에 결정한다. 첫 게스트 OS는 Rocky Linux 10 계열이다. 정확한 가상 스위치·허용 10대역 서브넷과 Hyper-V 작업자 계정·기동·포털 요청 전달 방식은 사용자가 지정한다.
