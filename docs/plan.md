@@ -4,6 +4,8 @@
 
 단일 Windows 11 Pro Hyper-V 호스트에서 수동 VM 생성부터 반복 가능한 PowerShell 자동화, 관리포털 연동까지 단계적으로 검증한다. Windows Server·클러스터·VMM·DPM 확장은 환경 확보 후 진행한다.
 
+운영자 화면의 방향은 [UI 가이드](ui/guide.md)와 [HTML 목업](ui/mockup.html)에서 먼저 검토한다.
+
 ## 단계
 
 1. 호스트 CPU, 메모리, 저장공간, 가상화, 네트워크와 Hyper-V 상태를 확인한다. 실제 사용 가능한 자원과 허용된 사설망 범위를 기록한다.
