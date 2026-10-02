@@ -2,10 +2,10 @@
 
 > 상태: 계획 단계. VM 실습·자동화·검증 전.
 
-Windows 11 Pro의 단일 Hyper-V 호스트에서 VM 한 대를 수동으로 만들고 같은 과정을 PowerShell로 자동화한다. 이후 관리포털의 VM 신청·상태 변경 요청과 연결한다. 실행 환경은 허용된 사설망에 한정한다.
+Windows 11 Pro의 단일 물리 Hyper-V 호스트에서 Windows Server 중첩 Compute와 Rocky 고객 VM을 구축하고 PowerShell·VMM으로 자동화한다. 실행 환경은 허용된 사설망에 한정한다.
 
-Windows Server VM, Failover Cluster, VMM, DPM은 필요한 환경을 확보한 뒤 확장한다. 현재 단일 물리 PC 실습 결과를 다중 물리 호스트 장애 내성으로 표현하지 않는다.
+AD/DNS 1대·VMM/SQL 1대·Compute 3대·Storage 3대의 인프라 8대로 클러스터를 실습한 뒤, 고객 VM·디스크를 보존해 인프라 4대로 전환한다. 이후 별도 Linux 서비스 4대와 연동한다. 인프라 8대와 Linux 8대 시험은 동시에 하지 않으며, 단일 물리 PC 결과를 다중 물리 호스트 장애 내성으로 표현하지 않는다.
 
-[단계별 계획](docs/plan.md)에 진행 상태와 검증 결과를 기록하고, 구조나 기능이 바뀌면 이 README를 갱신한다.
+[기능·의존성·구현 순서 상세 계획](docs/implementation-plan.md)에 세부 작업, 선행 조건, 사용자 결정 게이트와 완료 증거를 정리했다. [기존 단계별 계획](docs/plan.md)은 이전 초안으로 남긴다. 승인 요구사항의 원본은 PMT 명세서이며, 상세 계획의 새 구현안은 제안 상태다.
 
-화면 방향은 [UI 가이드](docs/ui/guide.md)와 [HTML 목업](docs/ui/mockup.html)에 정리했다. 목업의 호스트·VM 수치는 가상 데이터이며 실제 검증 결과가 아니다.
+화면 방향은 [UI 가이드](docs/ui/guide.md)와 [HTML 목업](docs/ui/mockup.html)에 정리했다. 최신 배치의 운영 화면은 Linux 관리자 콘솔에 둔다. 기존 가이드의 PHP 배치와 목업의 가상 수치는 현재 구현·검증 결과가 아니다.

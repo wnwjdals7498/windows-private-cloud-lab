@@ -1,5 +1,7 @@
 # Windows 사설 클라우드 UI 가이드 · 초안
 
+> 최신 배치에서는 이 화면을 **Linux 관리자 콘솔**에 통합한다(PMT D47). 아래 PHP 배치 설명은 이전 이력이며, 구현 범위는 [상세 계획](../implementation-plan.md)의 P16·X04를 따른다.
+
 > 실습 절차와 결과를 읽기 쉽게 보여주는 화면 설계 문서. [HTML 목업](mockup.html)은 가상 데이터만 사용한다. 실제 화면은 별도 Windows 웹앱이 아니라 PHP·CodeIgniter 관리포털의 관리자 메뉴에 넣는다.
 
 ## 화면 목표
