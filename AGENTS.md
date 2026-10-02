@@ -3,6 +3,7 @@
 ## 먼저 읽기
 
 - [참조 문서 안내](docs/pmt-docs/README.md)에서 해당 작업 문서만 읽는다. 실행 순서는 [18단계 계획](docs/implementation-plan.md)을 따른다.
+- 실제 작업 인계는 [기능 상세 카드](docs/pmt-docs/implementation-details/README.md)와 [Luna 병렬 실행](docs/pmt-docs/implementation-details/parallel-execution.md)을 따른다. 파일 편집 목록을 목적·완료 조건으로 사용하지 않는다.
 - 사용자 최신 지시·승인 결정 → PMT 명세 → 해당 참조 문서 순으로 대조한다. 충돌을 발견하면 관련 문서를 함께 수정한다.
 - 기존 `docs/plan.md`·UI 목업은 이전 초안이다. 예시·모의·제안·실측을 구분한다.
 - 설명은 간단명료하게 쓴다. 기술 사실·제품 지원 정보는 공식 문서만 사용하고 출처·확인일을 남긴다.
@@ -37,6 +38,8 @@
 ## 변경·운영·완료
 
 - 새 기능은 입력→권한→정책→실행→관측→통지→복구→증거를 함께 정의한다. [확장 절차](docs/pmt-docs/extensibility.md)를 따른다.
+- 작업을 맡길 때 목적·추가/수정/삭제 행동 범위·goal/non-goal·각 input/output의 의미·Test·Logging·복구·완료 증거를 지정한다. 실제 주소·사양·샘플 값으로 필드의 의미 설명을 대신하지 않는다.
+- 병렬 작업은 공유 계약을 먼저 고정한다. 한 모듈의 상태·공유 정의는 한 담당자가 작성하고, 실호스트 변경·PMT·통합은 주 에이전트가 관리한다. 코드 준비와 실호스트 완료를 구분한다.
 - 구현할 모듈만 만든다. [목표 tree](docs/pmt-docs/architecture.md)를 빈 프로젝트·미사용 추상화로 한 번에 생성하지 않는다.
 - 장애 처리의 기대 동작은 [동작 레퍼런스](docs/pmt-docs/reference-flows.md)와 대조한다.
 - 운영 로그·감사 원장·작업 DB는 역할을 분리한다. [로깅/운영](docs/pmt-docs/logging-and-operations.md)의 마스킹·용량·보존·복구 규칙을 적용한다.

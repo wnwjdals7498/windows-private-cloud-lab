@@ -10,4 +10,6 @@ AD/DNS 1대·VMM/SQL 1대·Compute 3대·Storage 3대의 인프라 8대로 클�
 
 구현 작업은 [AGENTS.md](AGENTS.md)와 [작업별 참조 문서](docs/pmt-docs/README.md)를 따른다. 프레임워크 선정, 목표 폴더 구조, 모듈 책임·통신·동작 예시, 확장·코딩·시험·로깅·운영 기준을 정리했다.
 
+[기능별 상세계획](docs/pmt-docs/implementation-details/README.md)은 36개 행동 계약 카드와 GPT-6 Luna 병렬 작업·통합 계획을 제공한다. 파일 편집 지시 대신 입력/출력의 의미와 Test·Logging·복구 증거로 인계한다.
+
 화면 방향은 [UI 가이드](docs/ui/guide.md)와 [HTML 목업](docs/ui/mockup.html)에 정리했다. 최신 배치의 운영 화면은 Linux 관리자 콘솔에 둔다. 기존 가이드의 PHP 배치와 목업의 가상 수치는 현재 구현·검증 결과가 아니다.

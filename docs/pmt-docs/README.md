@@ -9,6 +9,8 @@
 | 필요한 내용 | 문서 |
 | --- | --- |
 | 전체 순서·145개 작업·완료 증거 | [구현 계획](../implementation-plan.md) |
+| 목적·행동 범위·입출력 의미·Test·Logging으로 정의한 36개 인계 카드 | [기능별 상세계획](implementation-details/README.md) · [145개 작업 찾기](implementation-details/feature-map.md) |
+| GPT-6 Luna 병렬 배정·공유 계약·통합 순서 | [병렬 실행](implementation-details/parallel-execution.md) · [인계 규약](implementation-details/handoff-contract.md) |
 | 프레임워크·라이브러리·선정 이유·대안·도입 시점 | [기술 선정](technology-stack.md) |
 | 전체 폴더 tree·배포 위치·코드 의존 방향 | [구조](architecture.md) |
 | 기능별 모듈 책임·입출력·저장 소유권·단계 매핑 | [모듈](modules.md) |

@@ -6,6 +6,8 @@
 
 구현 방법은 [AGENTS.md](../AGENTS.md)와 [프레임워크·모듈·통신·코딩·운영 참조](pmt-docs/README.md)를 따른다. 참조 문서의 기술·폴더·운영 수치는 추천안이며 아래 사용자 결정 게이트를 대체하지 않는다.
 
+145개 작업의 인계 범위는 [36개 기능 상세 카드](pmt-docs/implementation-details/README.md)에 구체화했다. 목적·추가/수정/삭제 행동·goal/non-goal·입출력 의미·Test·Logging·실패/복구·완료 증거를 기준으로 하며, [Luna 병렬 실행](pmt-docs/implementation-details/parallel-execution.md)은 코드 개발과 실제 호스트 완료 순서를 구분한다.
+
 이 문서는 [PMT 명세서](../../docs/projects/windows-private-cloud-lab/resources/derived/specification.md)의 요구사항과 D40~D57을 실행 작업으로 나눈다. **기존 사용자 결정은 유지하며, 아래 작업 분해·기본안·구현 순서는 이번 제안이다.** 아직 사용자에게 남겨진 기술·환경 결정은 임의 확정하지 않는다.
 
 현재 저장소에는 README, 기존 계획, UI 가이드와 목업이 있다. 실행 코드·자동화·실환경 검증 결과는 없다. 현재 접속한 개발 PC와 별도 64GB 실습 PC를 구분한다. 오래된 PHP 직접 호출·JWT·HMAC 설명보다 PMT의 새 Linux API·상호 TLS 계약을 우선한다.
