@@ -8,4 +8,6 @@ AD/DNS 1대·VMM/SQL 1대·Compute 3대·Storage 3대의 인프라 8대로 클�
 
 [기능·의존성·구현 순서 상세 계획](docs/implementation-plan.md)에 세부 작업, 선행 조건, 사용자 결정 게이트와 완료 증거를 정리했다. [기존 단계별 계획](docs/plan.md)은 이전 초안으로 남긴다. 승인 요구사항의 원본은 PMT 명세서이며, 상세 계획의 새 구현안은 제안 상태다.
 
+구현 작업은 [AGENTS.md](AGENTS.md)와 [작업별 참조 문서](docs/pmt-docs/README.md)를 따른다. 프레임워크 선정, 목표 폴더 구조, 모듈 책임·통신·동작 예시, 확장·코딩·시험·로깅·운영 기준을 정리했다.
+
 화면 방향은 [UI 가이드](docs/ui/guide.md)와 [HTML 목업](docs/ui/mockup.html)에 정리했다. 최신 배치의 운영 화면은 Linux 관리자 콘솔에 둔다. 기존 가이드의 PHP 배치와 목업의 가상 수치는 현재 구현·검증 결과가 아니다.
